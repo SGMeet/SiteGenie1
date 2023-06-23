@@ -68,7 +68,7 @@ class LoginScreen : AppCompatActivity() {
         val  credential =  GoogleAuthProvider.getCredential(account.idToken,null)
         auth.signInWithCredential(credential).addOnCompleteListener {
             if (it.isSuccessful){
-                val intent : Intent = Intent(this,MainActivity::class.java)
+                val intent : Intent = Intent(this,geniebot::class.java)
                 startActivity(intent)
             }
             else
